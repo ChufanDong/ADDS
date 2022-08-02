@@ -6,9 +6,9 @@
 using namespace std;
 
 int main(){
+    Referee result;
     Human A;
     Computer B;
-    Referee result;
     cout<<result.refGame(A, B)<<endl;
 
     return 0;
