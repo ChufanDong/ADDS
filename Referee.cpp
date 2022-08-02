@@ -4,6 +4,7 @@
 #include "Computer.h"
 
 Referee::Referee(){
+    _result=0;
 }
 char Referee::refGame(Human  player1, Computer player2){
     if(player1.makeMove() == 'R'){
