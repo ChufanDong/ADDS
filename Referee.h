@@ -6,7 +6,7 @@
 
 class Referee{
     private:
-    char _result;
+    char _result=0;
     public:
     Referee( ); // constructor
     char refGame(Human player1, Computer player2);

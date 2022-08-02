@@ -3,7 +3,7 @@
 
 class Human{
     private:
-    char _choice;
+    char _choice=0;
     public:
     Human(); // constructor
     char makeMove();
