@@ -4,6 +4,8 @@
 using namespace std;
 
 Human::Human(){
+    cout<<"Enter move: ";
+    cin>>_choice;
 }
 char Human::makeMove(){
     cout<<"Enter move: ";
