@@ -62,3 +62,4 @@ char Referee::refGame(Human player1, Computer player2) {
     }
   return _result;
 }
+Human::~Human(){}
