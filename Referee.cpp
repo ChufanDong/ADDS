@@ -7,7 +7,6 @@
 
 Referee::Referee() { _result = 0; }
 char Referee::refGame(Human player1, Computer player2) {
-  while (1 == 1) {
     if (player1.makeMove() == 'R') {
       switch (player2.makeMove()) {
         case 'R':
@@ -59,7 +58,5 @@ char Referee::refGame(Human player1, Computer player2) {
       }
       return _result;
     }
-  }
-
   return _result;
 }

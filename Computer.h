@@ -7,7 +7,5 @@ class Computer{
     public:
     Computer(); // constructor
     char makeMove();
-
 };
-
 #endif

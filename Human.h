@@ -7,7 +7,5 @@ class Human{
     public:
     Human(); // constructor
     char makeMove();
-
 };
-
 #endif

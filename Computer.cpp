@@ -2,8 +2,8 @@
 #include "Computer.h"
 
 Computer::Computer(){
-    _choice='R';
 }
 char Computer::makeMove(){
+    _choice='R';
     return _choice;
 }
