@@ -4,7 +4,6 @@
 using namespace std;
 
 Human::Human(){
-    
 }
 char Human::makeMove(){
     _choice = 0;
