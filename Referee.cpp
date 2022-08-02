@@ -9,6 +9,7 @@ Referee::Referee() {
   _result = 0; 
   }
 char Referee::refGame(Human player1, Computer player2) {
+    std::cout<<"DCF"<<std::endl;
     if (player1.makeMove() == 'R') {
       switch (player2.makeMove()) {
         case 'R':
