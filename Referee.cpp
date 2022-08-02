@@ -23,7 +23,6 @@ char Referee::refGame(Human  player1, Computer player2){
             _result=0;
             break;
         }
-        return _result;
     }
     if(player1.makeMove() == 'P'){
         switch (player2.makeMove())
@@ -41,7 +40,6 @@ char Referee::refGame(Human  player1, Computer player2){
             _result=0;
             break;
         }
-        return _result;
     }
     if(player1.makeMove() == 'S'){
         switch (player2.makeMove())
@@ -59,7 +57,6 @@ char Referee::refGame(Human  player1, Computer player2){
             _result=0;
             break;
         }
-        return _result;
     }
     return _result;
 }
