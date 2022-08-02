@@ -4,6 +4,7 @@
 using namespace std;
 
 Human::Human(){
+    _choice = 0;
     cout<<"Please enter R, P or S:"<<endl;
     cin>>_choice;
 }
