@@ -7,7 +7,7 @@ Human::Human(){
     _choice = 0;
 }
 char Human::makeMove(){
-    cout<<"Enter move: "<<endl;
+    cout<<"Enter move: ";
     cin>>_choice;
     return _choice;
 }
