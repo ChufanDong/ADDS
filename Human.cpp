@@ -4,12 +4,12 @@
 using namespace std;
 
 Human::Human(){
-    
-}
-char Human::makeMove(){
-    _choice = 0;
+        _choice = 0;
     cout<<"Enter move: ";
     cin>>_choice;
     cout<<_choice<<endl;
+}
+char Human::makeMove(){
+
     return _choice;
 }
