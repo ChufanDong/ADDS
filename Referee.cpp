@@ -9,8 +9,10 @@ Referee::Referee() {
   _result = 0; 
   }
 char Referee::refGame(Human player1, Computer player2) {
-    if (player1.makeMove() == 'R') {
-      switch (player2.makeMove()) {
+    _human = player1.makeMove();
+    _computer = player2.makeMove();
+    if (_human == 'R') {
+      switch (_computer) {
         case 'R':
           _result = 'T';
           break;
@@ -26,8 +28,8 @@ char Referee::refGame(Human player1, Computer player2) {
       }
       return _result;
     }
-    if (player1.makeMove() == 'P') {
-      switch (player2.makeMove()) {
+    if (_human == 'P') {
+      switch (_computer) {
         case 'P':
           _result = 'T';
           break;
@@ -43,8 +45,8 @@ char Referee::refGame(Human player1, Computer player2) {
       }
       return _result;
     }
-    if (player1.makeMove() == 'S') {
-      switch (player2.makeMove()) {
+    if (_human == 'S') {
+      switch (_computer) {
         case 'S':
           _result = 'T';
           break;
