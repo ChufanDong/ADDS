@@ -9,5 +9,6 @@ Human::Human(){
     cin>>_choice;
 }
 char Human::makeMove(){
+    cout<<_choice<<endl;
     return _choice;
 }
