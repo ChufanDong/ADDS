@@ -7,7 +7,7 @@ Human::Human(){
     _choice = 0;
 }
 char Human::makeMove(){
-    cout<<"Please enter R, P or S:"<<endl;
+    cout<<"Enter move: "<<endl;
     cin>>_choice;
     return _choice;
 }
