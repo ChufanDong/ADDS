@@ -4,6 +4,5 @@
 Computer::Computer(){
 }
 char Computer::makeMove(){
-    _choice='R';
     return _choice;
 }

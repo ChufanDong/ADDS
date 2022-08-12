@@ -2,6 +2,14 @@
 #include "Human.h"
 #include "Computer.h"
 #include "Referee.h"
+#include "RandomComputer.h"
+#include "Avalanche.h"
+#include "Bureaucrat.h"
+#include "Toolbox.h"
+#include "Crescendo.h"
+#include "PaperDoll.h"
+#include "FistfullODollars.h"
+
 
 using namespace std;
 
@@ -10,7 +18,7 @@ int main(){
     Human A1;
     Human A2;
     Human A3;
-    Computer B;
+    Toolbox B;
     cout<<result.refGame(A1, B)<<endl;
     cout<<result.refGame(A2, B)<<endl;
     cout<<result.refGame(A3, B)<<endl;
