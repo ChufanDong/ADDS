@@ -14,41 +14,23 @@ Player* Referee::refGame(Player* playerA, Player* PlayerB)
 
      p1 = playerA-> getMove();
      p2 = PlayerB-> getMove();
-    
-    //if (p1 == p2)
-    //{
-    //    result = 'T';
-    // }
-    //else if ((p1 == 'R' && p2 == 'S') || (p1 == 'P' && p2 == 'R') || (p1 == 'S' && p2 == 'P') )
-    //{
-    //    result = 'W';
-    //}
-    //else
-    //{
-    //    result = 'L';
-    //}
-    
-    //return result;
-
-
-
+ 
     for(int i=0; i<5; i++)
     {
-        if (p1.at(i)=='R'&&p2.at(i)=='R')
+        if (p1.at(i)==p2.at(i))
     {
         //result = 'T';
         scoreA++;
-    
     }
-    else if ((p1.at(i)=='R'&&p2.at(i)=='S') || (p1.at(i)=='S'&&p2.at(i)=='P') || (p1.at(i)=='P'&&p2.at(i)=='R') )
-    {
-        //result = 'W';
-        scoreA++;
-    }
-    else
+    else if ((p1.at(i)=='R'&&p2.at(i)=='P') || (p1.at(i)=='S'&&p2.at(i)=='R') || (p1.at(i)=='P'&&p2.at(i)=='S') )
     {
         //result = 'L';
         scoreB++;
+    }
+    else
+    {
+        //result = 'W';
+        scoreA++;
     }
     }
 
