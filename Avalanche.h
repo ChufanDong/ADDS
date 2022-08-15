@@ -1,9 +1,14 @@
+#include "Player.h"
+#include <string>
+
 #ifndef _AVALANCHE_H
 #define _AVALANCHE_H
-#include "Computer.h"
 
-class Avalanche: public Computer{
-    public:
-    char makeMove();
+class Avalanche: public Player
+{
+public:
+    Avalanche();
+    void makemove();
+    std::string showname();
 };
 #endif

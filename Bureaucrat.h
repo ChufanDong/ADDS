@@ -1,9 +1,12 @@
 #ifndef _BUREAUCRAT_H
 #define _BUREAUCRAT_H
-#include "Computer.h"
+#include "Player.h"
+#include <string.h>
 
-class Bureaucrat: public Computer{
+class Bureaucrat: public Player{
     public:
-    char makeMove();
+    Bureaucrat();
+    void makemove();
+    std::string showname();
 };
 #endif

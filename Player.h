@@ -7,11 +7,10 @@ class Player
 {
 public:
 	Player();
-	std::string move;
-	std::string getMove();
+	char move;
+	char getMove();
 	virtual std::string showname()=0;
 	//char move;
-
 };
 
 #endif

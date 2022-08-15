@@ -9,7 +9,8 @@
 #include "Crescendo.h"
 #include "PaperDoll.h"
 #include "FistfullODollars.h"
-
+#include "Referee.h"
+#include "Player.h"
 
 using namespace std;
 

@@ -1,7 +1,13 @@
 #include <iostream>
 #include "Avalanche.h"
-#include "Computer.h"
+#include "Player.h"
 
-char Avalanche::makeMove(){
-    return 'R';
+Avalanche::Avalanche(){
+    
+}
+void Avalanche::makemove(){
+    move='R';
+}
+std::string Avalanche::showname(){
+    return "Avalanche";
 }

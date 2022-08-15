@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Toolbox.h"
-#include "Computer.h"
+#include "Player.h"
 
-char Toolbox::makeMove(){
-    return 'S';
+void Toolbox::makeMove(){
+    move='S';
 }

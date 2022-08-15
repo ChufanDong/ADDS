@@ -1,10 +1,11 @@
 #include <iostream>
 #include "FistfullODollars.h"
+#include "Player.h"
 
 FistfullODollars::FistfullODollars(){
     _choice=0;
 }
-char FistfullODollars::makeMove(){
+void FistfullODollars::makeMove(){
     _choice++;
     if (_choice>3){
         _choice=1;
@@ -12,12 +13,10 @@ char FistfullODollars::makeMove(){
     switch (_choice)
     {
     case 1:
-        return 'R';
+        move='R';
     case 2:
-        return 'P';
+        move='P';
     case 3:
-        return 'P';
-    default:
-        return 0;
+        move='P';
     }
 }

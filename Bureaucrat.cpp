@@ -1,7 +1,14 @@
 #include <iostream>
 #include "Bureaucrat.h"
-#include "Computer.h"
+#include "Player.h"
 
-char Bureaucrat::makeMove(){
-    return 'P';
+Bureaucrat::Bureaucrat(){
+    
+}
+void Bureaucrat::makemove(){
+    move='P';
+}
+
+std::string Bureaucrat::showname(){
+    return "Bureaucrat";
 }

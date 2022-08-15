@@ -3,6 +3,6 @@
 
 Computer::Computer(){
 }
-char Computer::makeMove(){
-    return _choice;
+void Computer::makeMove(){
+    move=_choice;
 }

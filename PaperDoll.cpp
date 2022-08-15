@@ -1,10 +1,11 @@
 #include <iostream>
 #include "PaperDoll.h"
+#include "Player.h"
 
 PaperDoll::PaperDoll(){
     _choice=0;
 }
-char PaperDoll::makeMove(){
+void PaperDoll::makeMove(){
     _choice++;
     if (_choice>3){
         _choice=1;
@@ -12,12 +13,10 @@ char PaperDoll::makeMove(){
     switch (_choice)
     {
     case 1:
-        return 'P';
+        move='P';
     case 2:
-        return 'S';
+        move='S';
     case 3:
-        return 'S';
-    default:
-        return 0;
+        move='S';
     }
 }

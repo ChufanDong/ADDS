@@ -1,9 +1,9 @@
 #ifndef _TOOLBOX_H
 #define _TOOLBOX_H
-#include "Computer.h"
+#include "Player.h"
 
-class Toolbox: public Computer{
+class Toolbox: public Player{
     public:
-    char makeMove();
+    void makeMove();
 };
 #endif

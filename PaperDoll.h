@@ -1,12 +1,12 @@
 #ifndef _PAPERDOLL_H
 #define _PAPERDOLL_H
-#include "Computer.h"
+#include "Player.h"
 
-class PaperDoll: public Computer{
+class PaperDoll: public Player{
     private:
     char _choice;
     public:
     PaperDoll();
-    char makeMove();
+    void makeMove();
 };
 #endif

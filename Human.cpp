@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Human.h"
+#include "Player.h"
 
 using namespace std;
 
 Human::Human(){
 }
-char Human::makeMove(){
+void Human::makeMove(){
     cout<<"Enter move: ";
     cin>>_choice;
-    return _choice;
+    move=_choice;
 }

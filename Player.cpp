@@ -7,12 +7,9 @@ Player::Player()
 {
 
 }
-                               
 
-string Player::getMove()
+char Player::getMove()
 {
-    
-    return move;    
-    
+    return move;       
 }
 
