@@ -1,9 +1,9 @@
-#ifndef _EFFICENTTRUCKLOADS_H
-#define _EFFICENTTRUCKLOADS_H
+#ifndef _EFFICIENTTRUCKLOADS_H
+#define _EFFICIENTTRUCKLOADS_H
 #include <iostream>
 using namespace std;
 
-class EfficentTruckloads{
+class EfficientTruckloads{
     private:
     int _numCrates;
     int _loadSize;
@@ -11,7 +11,7 @@ class EfficentTruckloads{
     int _counter;
     int form[10][3];
     public:
-    EfficentTruckloads();
+    EfficientTruckloads();
     int memoisation();
     int numTrucks(int numCrates, int loadSize);
 };

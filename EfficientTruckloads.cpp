@@ -1,13 +1,13 @@
 #include <iostream>
-#include "EfficentTruckloads.h"
+#include "EfficientTruckloads.h"
 
-EfficentTruckloads::EfficentTruckloads(){
+EfficientTruckloads::EfficientTruckloads(){
     _numCrates=0;
     _loadSize=0;
     _result=0;
     _counter=0;
 }
-int EfficentTruckloads::memoisation(){
+int EfficientTruckloads::memoisation(){
     for(int i=0;i<10;i++){
         if(form[i][0]==_numCrates && form[i][1]==_loadSize){
             return form[i][2];
@@ -22,7 +22,7 @@ int EfficentTruckloads::memoisation(){
     _counter++;
     return -1;
 }
-int EfficentTruckloads::numTrucks(int numCrates, int loadSize){
+int EfficientTruckloads::numTrucks(int numCrates, int loadSize){
     _numCrates=numCrates;
     _loadSize=loadSize;
     if (numCrates == 0) {
