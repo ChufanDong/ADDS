@@ -7,7 +7,10 @@ using namespace std;
 int main(){
     int x,y,n=0;
     string str="";
-    cin>>n>>str>>x>>y;
+    cin>>n;
+    cin>>str;
+    cin>>x;
+    cin>>y;
     Reverse A;
     Truckloads B;
     int a=A.reverseDigit(n);

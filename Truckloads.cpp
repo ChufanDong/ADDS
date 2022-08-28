@@ -2,11 +2,20 @@
 #include "Truckloads.h"
 
 Truckloads::Truckloads(){
-    _numReturn=1;
 }
 int Truckloads::numTrucks(int numCrates, int loadSize){
-    if(numCrates<0 || loadSize<0 || numCrates>10000 || loadSize>10000){
-        return -1;
+     if (numCrates == 0) {
+        return 0;
     }
-    
+    if (numCrates == 1) {
+        return numCrates <= loadSize ? 1 : 0;
+    }
+    if (numCrates <= loadSize) {
+        return 1;
+    }
+    if (numCrates % 2 == 0) {
+        return numTrucks(numCrates / 2, loadSize) * 2;
+    } else {
+        return numTrucks(numCrates / 2, loadSize) + numTrucks((numCrates + 1) / 2, loadSize);
+    }
 }
