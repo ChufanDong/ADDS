@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Reverse.h"
 #include "Truckloads.h"
+#include "EfficentTruckloads.h"
 
 using namespace std;
 
@@ -13,9 +14,11 @@ int main(){
     cin>>y;
     Reverse A;
     Truckloads B;
+    EfficentTruckloads C;
     int a=A.reverseDigit(n);
     string b=A.reverseString(str);
     int c=B.numTrucks(x,y);
+    int d=C.numTrucks(x,y);
     if(a==-1){
         cout<<"ERROR";
     }
@@ -24,10 +27,10 @@ int main(){
     }
     cout<<" "<<b<<" ";
     if(c==-1){
-        cout<<"ERROR";
+        cout<<"ERROR ERROR";
     }
     else{
-        cout<<c;
+        cout<<c<<" "<<c<<endl;
     }
     return 0;
 }
