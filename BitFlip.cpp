@@ -1,12 +1,5 @@
-#include <iostream>
-#include <string>
 #include "BitFlip.h"
-
-using namespace std;
-
-BitFlip::BitFlip(){
-
-}
+#include <iostream>
 
 Individual BitFlip::mutate(Individual ind, int k)
 {
@@ -24,17 +17,3 @@ Individual BitFlip::mutate(Individual ind, int k)
     
     return ind;
 }
-/*
-Individual BitFlip::mutate(Individual input, int k){
-    
-    while (k > _length){
-        k = k - _length;
-    }
-    if(_return[k] == '0'){
-        _return[k]= '1';
-    }
-    else{
-        _return[k]= '0';
-    }
-}
-*/

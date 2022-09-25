@@ -59,6 +59,7 @@ Individual::Individual(string newString)
     binaryString = newString;
 }
 
-Individual::~Individual(){
-    
+Individual::~Individual()
+{
+   
 }

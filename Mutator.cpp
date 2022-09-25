@@ -1,8 +1,5 @@
 #include "Mutator.h"
-
-Mutator::Mutator(){
-
-}
+#include <iostream>
 
 Individual Mutator::mutate(Individual ind, int k)
 {
