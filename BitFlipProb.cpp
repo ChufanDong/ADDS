@@ -1,5 +1,6 @@
 #include "BitFlipProb.h"
 #include <iostream>
+#include <stdlib.h>
 
 BitFlipProb::BitFlipProb(double p)
 {
