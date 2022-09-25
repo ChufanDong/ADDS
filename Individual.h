@@ -1,18 +1,19 @@
-#include <iostream>
-#include <string>
-
 #ifndef _INDIVIDUAL_H
 #define _INDIVIDUAL_H
 
+#include <iostream>
+#include <string>
+
+
+
 using namespace std;
 
-class Individual
-{
+class Individual{
     private:
         string binaryString;
-        int _length
+        int _length;
     public:
-        Individual(string binarystring);
+        Individual();
         Individual(int length);
         Individual(string newString);
         string getString();
@@ -21,8 +22,6 @@ class Individual
         int getMaxOnes();
         void flipBit(int pos);
         
-        
-
         ~Individual();
 };
 #endif
