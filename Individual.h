@@ -1,23 +1,27 @@
-#ifndef INDIVIDUAL_H_
-#define INDIVIDUAL_H_
-#include <string>
 #include <iostream>
+#include <string>
+
+#ifndef _INDIVIDUAL_H
+#define _INDIVIDUAL_H
+
 using namespace std;
 
 class Individual
 {
     private:
         string binaryString;
-
+        int _length
     public:
-        Individual();
-        string getString();
-        int getBit(int pos);
-        void flipBit(int pos);
-        int getMaxOnes();
-        int getLength();
+        Individual(string binarystring);
         Individual(int length);
         Individual(string newString);
+        string getString();
+        int getBit(int pos);
+        int getLength();
+        int getMaxOnes();
+        void flipBit(int pos);
+        
+        
 
         ~Individual();
 };

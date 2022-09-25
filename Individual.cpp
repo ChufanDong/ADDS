@@ -4,9 +4,12 @@ using namespace std;
 
 
 
-Individual::Individual()
+Individual::Individual(string binarystring)
 {
     binaryString="null";
+    _length = binarystring.length();
+    binaryString = binarystring;
+
 }
 
 string Individual::getString()

@@ -17,7 +17,6 @@ int main()
     int k2;
     cin >> binarystr1 >> k1 >> binarystr2 >> k2;
 
-    // Two Individual objects should be created using binarystr1 and binarystr2.
     Individual *child1 = new Individual(binarystr1);
     Individual *child2 = new Individual(binarystr2);
 
@@ -26,8 +25,6 @@ int main()
 
     cout << execute(child1, BF, k1)->getString() << ' ';
     cout << execute(child2, RR, k2)->getString() << ' ' << execute(child2, RR, k2)->getMaxOnes() << endl;
-
-
 
     return 0;
 }
