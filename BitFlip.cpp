@@ -3,13 +3,12 @@
 
 Individual BitFlip::mutate(Individual ind, int k)
 {
-    int index;
     while (k > ind.getLength())
     {
-        index = k - ind.getLength() - 1;
+        k = k - ind.getLength() - 1;
     }
 
-    ind.flipBit(index);
+    ind.flipBit(k);
     
     return ind;
 }

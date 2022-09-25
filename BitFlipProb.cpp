@@ -17,7 +17,6 @@ Individual BitFlipProb::mutate(Individual ind, int k)
             ind.flipBit(i);
         }
     }
-        
 
     return ind;
 }
