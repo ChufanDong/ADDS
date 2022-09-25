@@ -35,7 +35,7 @@ int main(){
     ReduceGCD rGCD;
 
     vector<int>V1=mTriple.map(Vector);
-    vector<int>V2=mAbsVal.map(V1);
+    vector<int>V2=mAbsVal.map(V1);  
     vector<int>V3=mTriple.map(V2);
     vector<int>V4=fTwoDiPo.filter(V3);
     vector<int>V5=fOdd.filter(V4);
