@@ -7,9 +7,6 @@ using namespace std;
 Individual::Individual(string binarystring)
 {
     binaryString="null";
-    _length = binarystring.length();
-    binaryString = binarystring;
-
 }
 
 string Individual::getString()
@@ -19,8 +16,8 @@ string Individual::getString()
 
 int Individual::getBit(int pos)
 {
-    int leng = binaryString.length();
-    if( pos < leng )
+    int length = binaryString.length();
+    if( pos < length && pos > 1)
         return binaryString[pos] - '0';
     else 
         return -1;
@@ -31,30 +28,35 @@ void Individual::flipBit(int pos)
     binaryString[pos] = binaryString[pos] == '0' ? '1' : '0';
 }
 
-int Individual::getMaxOnes()
+int Individual :: getMaxOnes()
 {
-    int ones = 1;
-    int leng = binaryString.length();
-    for (int i = 0; i < leng; i++)
+    int counter = 0;
+    int maxones = 0;
+
+    for (int i = 0; i < _length; i++)
     {
-        while (binaryString[i] == binaryString[i+1] && binaryString[i] == '1')
+        if (binaryString.at(i) == '1')
         {
-            ones++;
-            i++;
+            counter++;
+        } else 
+        {
+            counter = 0;
         }
+        maxones = max(maxones,counter);
     }
-    return ones;
+    return maxones;
 }
 
 int Individual::getLength()
 {
-    return binaryString.size();
+    return _length;
 }
 
 Individual::Individual(int length)
 {
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < length; i++){
         binaryString.push_back('0');
+    }
 }
 
 Individual::Individual(string newString)
