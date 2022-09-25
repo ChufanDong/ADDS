@@ -4,13 +4,9 @@
 Individual BitFlip::mutate(Individual ind, int k)
 {
     int index;
-    if (k % ind.getLength())
+    while (k > ind.getLength())
     {
-        index = k % ind.getLength() - 1;
-    }
-    else
-    {
-        index = ind.getLength() - 1;
+        index = k - ind.getLength() - 1;
     }
 
     ind.flipBit(index);
