@@ -18,8 +18,9 @@ Individual Rearrange::mutate(Individual input, int k){
     }
 
     for(int i = 0, j = input.getLength() - k ; i < k; i++, j++){
-        if(temp.getBit(j) != input.getBit(i) )
-        temp.flipBit(j);
+        if(temp.getBit(j) != input.getBit(i)){
+            temp.flipBit(j);
+        }
     }
 
     return temp;

@@ -2,10 +2,8 @@
 
 #include "BitFlip.h"
 
-Individual BitFlip::mutate(Individual input, int k)
-{
-    while (k > input.getLength())
-    {
+Individual BitFlip::mutate(Individual input, int k){
+    while (k > input.getLength()){
         k = k - input.getLength();
     }
 

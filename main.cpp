@@ -29,8 +29,7 @@ int main(){
     return 0;
 }
 
-Individual * execute(Individual * indPtr, Mutator * mPtr, int k)
-{
+Individual * execute(Individual * indPtr, Mutator * mPtr, int k){
     Individual temp = mPtr->mutate(*indPtr,k); //Deal with the opreation.
     Individual * res = new Individual(temp.getString()); //Store the result as a pointer.
     return res;
