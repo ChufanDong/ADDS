@@ -16,8 +16,8 @@ string Individual::getString()
 
 int Individual::getBit(int pos)
 {
-    int leng = binaryString.length();
-    if( pos < leng )
+    int length = binaryString.length();
+    if( pos < length )
         return binaryString[pos] - '0';
     else 
         return -1;

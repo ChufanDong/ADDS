@@ -5,21 +5,19 @@ Individual Rearrange::mutate(Individual ind, int k)
 {
     int index;
     Individual temp(ind.getLength());
-    if (k % ind.getLength())
+    while (k > ind.getLength())
     {
-        index = k % ind.getLength() - 1;
+        k = k - ind.getLength();
     }
-    else
+    k = k - 1;
+    for(int i = k, j = 0; i < ind.getLength(); i++, j++)
     {
-        index = ind.getLength() - 1;
-    }
-    for(int i = index, j = 0; i < ind.getLength(); i++, j++)
-    {
-        if(temp.getBit(j) != ind.getBit(i) )
+        if(temp.getBit(j) != ind.getBit(i) ){
             temp.flipBit(j);
+        }
     }
 
-    for(int i = 0, j = ind.getLength() - index ; i < index; i++, j++)
+    for(int i = 0, j = ind.getLength() - k ; i < k; i++, j++)
     {
             if(temp.getBit(j) != ind.getBit(i) )
             temp.flipBit(j);
