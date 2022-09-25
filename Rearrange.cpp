@@ -3,7 +3,6 @@
 
 Individual Rearrange::mutate(Individual ind, int k)
 {
-    int index;
     Individual temp(ind.getLength());
     while (k > ind.getLength())
     {
@@ -22,6 +21,5 @@ Individual Rearrange::mutate(Individual ind, int k)
             if(temp.getBit(j) != ind.getBit(i) )
             temp.flipBit(j);
     }
-
     return temp;
 }

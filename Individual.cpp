@@ -30,17 +30,22 @@ void Individual::flipBit(int pos)
 
 int Individual::getMaxOnes()
 {
-    int ones = 1;
-    int leng = binaryString.length();
-    for (int i = 0; i < leng; i++)
+    int ones = 0;
+    int length = binaryString.length();
+    int max = 0;
+    for (int i = 0; i < length; i++)
     {
-        while (binaryString[i] == binaryString[i+1] && binaryString[i] == '1')
-        {
+        if(binaryString[i] == '1'){
             ones++;
-            i++;
+            if (max < ones){
+            max = ones;
+            }
+        }
+        else{
+            ones = 0;
         }
     }
-    return ones;
+    return max;
 }
 
 int Individual::getLength()
