@@ -1,7 +1,11 @@
-#include "Mutator.h"
 #include <iostream>
 
-Individual Mutator::mutate(Individual ind, int k)
-{
-    return ind;
+#include "Mutator.h"
+
+Mutator::Mutator(){
+
+}
+
+Individual Mutator::mutate(Individual input, int k){
+    return input;
 }

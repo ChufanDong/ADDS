@@ -1,14 +1,14 @@
-#ifndef MUTATOR_H_
-#define MUTATOR_H_
-#include "Individual.h"
 #include <iostream>
 
-class Mutator : public Individual
-{
+#include "Individual.h"
+
+#ifndef _MUTATOR_H
+#define _MUTATOR_H
+
+class Mutator : public Individual{
     public:
-        Mutator(){}
-        virtual Individual mutate(Individual ind, int k)=0;
+        Mutator();
+        virtual Individual mutate(Individual input, int k)=0;
         virtual ~Mutator() = default;
 };
-
 #endif

@@ -1,10 +1,8 @@
-#ifndef _INDIVIDUAL_H
-#define _INDIVIDUAL_H
-
 #include <iostream>
 #include <string>
 
-
+#ifndef _INDIVIDUAL_H
+#define _INDIVIDUAL_H
 
 using namespace std;
 

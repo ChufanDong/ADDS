@@ -1,13 +1,13 @@
-#ifndef BITFLIP_H_
-#define BITFLIP_H_
-#include "Mutator.h"
 #include <iostream>
 
-class BitFlip:public Mutator
-{
+#include "Mutator.h"
+
+#ifndef _BITFLIP_H
+#define _BITFLIP_H
+
+class BitFlip:public Mutator{
     public:
-        Individual mutate(Individual ind, int k) override;
+        Individual mutate(Individual input, int k) override;
         ~BitFlip() override = default;
 };
-
 #endif

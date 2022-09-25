@@ -1,16 +1,16 @@
-#include "Rearrange.h"
-#include "BitFlipProb.h"
-#include "BitFlip.h"
-#include "Individual.h"
-#include "BitFlip.h"
-#include "Mutator.h"
 #include <iostream>
+
+#include "BitFlip.h"
+#include "BitFlipProb.h"
+#include "Individual.h"
+#include "Mutator.h"
+#include "Rearrange.h"
+
 using namespace std;
 
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k);
 
-int main()
-{
+int main(){
     string binarystr1;
     string binarystr2;
     int k1;

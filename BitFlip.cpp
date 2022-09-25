@@ -1,14 +1,17 @@
-#include "BitFlip.h"
 #include <iostream>
 
-Individual BitFlip::mutate(Individual ind, int k)
+#include "BitFlip.h"
+
+Individual BitFlip::mutate(Individual input, int k)
 {
-    while (k > ind.getLength())
+    while (k > input.getLength())
     {
-        k = k - ind.getLength();
+        k = k - input.getLength();
     }
+
     k = k - 1;
-    ind.flipBit(k);
+
+    input.flipBit(k);
     
-    return ind;
+    return input;
 }

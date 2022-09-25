@@ -1,23 +1,19 @@
-#include "BitFlipProb.h"
 #include <iostream>
 #include <stdlib.h>
 
-BitFlipProb::BitFlipProb(double p)
-{
+#include "BitFlipProb.h"
+
+BitFlipProb::BitFlipProb(double p){
     prob = p;
 }
 
-Individual BitFlipProb::mutate(Individual ind, int k)
-{
-    
-    for (int i = 0; i < ind.getLength(); i++)
-    {
+Individual BitFlipProb::mutate(Individual input, int k){
+    for (int i = 0; i < input.getLength(); i++){
         double a = rand() / double(RAND_MAX);
-        if (a <= prob)
-        {
-            ind.flipBit(i);
+        if (a <= prob){
+            input.flipBit(i);
         }
     }
 
-    return ind;
+    return input;
 }
