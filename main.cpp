@@ -24,13 +24,14 @@ int main(){
     Mutator * RR = new Rearrange;
 
     cout << execute(child1, BF, k1)->getString() << ' ';
-    cout << execute(child2, RR, k2)->getString() << ' ' << execute(child2, RR, k2)->getMaxOnes() << endl;
+    cout << execute(child2, RR, k2)->getString() << ' ';
+    cout << execute(child2, RR, k2)->getMaxOnes() << endl;
 
     return 0;
 }
 
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k){
-    Individual temp = mPtr->mutate(*indPtr,k); //Deal with the opreation.
-    Individual * res = new Individual(temp.getString()); //Store the result as a pointer.
+    Individual temp = mPtr->mutate(*indPtr,k);
+    Individual * res = new Individual(temp.getString());
     return res;
 }
