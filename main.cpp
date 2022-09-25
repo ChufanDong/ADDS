@@ -7,7 +7,6 @@
 #include "BitFlipProb.h"
 #include "Rearrange.h"
 
-
 using namespace std;
 
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k);
@@ -15,12 +14,12 @@ Individual * execute(Individual * indPtr, Mutator * mPtr, int k);
 int main(){
 
     int k1, k2;
-    string str1, str2;
+    string binarystr1, binarystr2;
 
-    cin>>str1>>k1>>str2>>k2;
+    cin>>binarystr1>>k1>>binarystr2>>k2;
 
-    Individual *child1 = new Individual(str1);
-    Individual *child2 = new Individual(str2);
+    Individual *child1 = new Individual(binarystr1);
+    Individual *child2 = new Individual(binarystr2);
 
     Mutator * BF = new BitFlip;
     Mutator * RR = new Rearrange;
