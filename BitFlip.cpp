@@ -5,7 +5,7 @@ Individual BitFlip::mutate(Individual ind, int k)
 {
     while (k > ind.getLength())
     {
-        k = k - ind.getLength() - 1;
+        k = k - ind.getLength();
     }
 
     ind.flipBit(k);
