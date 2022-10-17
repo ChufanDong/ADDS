@@ -29,23 +29,25 @@ int main(){
         }
     }
 
-    //
+    // 
     LinkedList List_1(array,arraySize);
+
     // Get action
     const char * p = inStr[arraySize].c_str();
+    int n1=stoi(inStr[arraySize+1]), n2=stoi(inStr[arraySize+2]);
     switch(*p){
         case 'A':
         switch(*(p+1)){
             case 'E':
-            cout<<"AE";
+            List_1.addEnd(n1);
             break;
 
             case 'F':
-            cout<<"AF";
+            List_1.addFront(n1);
             break;
 
             case 'P':
-            cout<<"AP";
+            List_1.addAtPosition(n1,n2);
             break;
         }
         break;
@@ -53,36 +55,33 @@ int main(){
         case 'D':
         switch(*(p+1)){
             case 'E':
-            cout<<"DE";
+            List_1.deleteEnd();
             break;
 
             case 'F':
-            cout<<"DF";
+            List_1.deleteFront();
             break;
 
             case 'P':
-            cout<<"DP";
+            List_1.deletePosition(n1);
             break;
         }
         break;
 
         case 'G':
         if(*(p+1) == 'I'){
-            cout<<"GI";
+            List_1.getItem(n1);
         }
         break;
 
         case 'S':
-        cout<<"S";
+        List_1.search(n1);
         break;
 
-        default :
-            break;
+        default:
+        break;
     }
 
-    for(int i=arraySize; i<enterCounter; i++){
-        
-    }
-
+    List_1.printItems();
     return 0;
 }

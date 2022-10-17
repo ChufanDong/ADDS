@@ -6,7 +6,6 @@
 class LinkedList : public Node{
     private:
         Node * head;
-        int _size;
     public:
         LinkedList();
         LinkedList(int *array,int Size);
