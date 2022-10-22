@@ -87,8 +87,7 @@ string calculator(vector<string> str){
 			    mysk_num.pop();
             }
             else{
-                std::cout<<"Error"<<endl;
-                return 0;
+                return "Error";
             }
 			if (!mysk_num.empty()){
                 num2 = mysk_num.top();
