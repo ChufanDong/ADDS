@@ -46,7 +46,11 @@ string SwitchToMid(vector<string> str){
         }
         if(size_oper >= 0){
             if (oper[size_oper] == "*" || oper[size_oper] == "/"){
-                if(oper[size_oper+1] == "+" || oper[size_oper+1] == "-"){
+                if(size_oper == oper.size()-1){
+                    result += oper[size_oper];
+                    size_oper--;
+                }
+                else if(oper[size_oper+1] == "+" || oper[size_oper+1] == "-"){
                     result = result.insert(0,"(");
                     result += ')';
                     result += oper[size_oper];
