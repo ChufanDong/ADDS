@@ -77,6 +77,7 @@ string SwitchToMid(vector<string> str){
 }
 
 string calculator(vector<string> str){
+    int counter_nums = 0, counter_opers = 0;
     string result;
 	stack<int> mysk_num;
 	stack<char> mysk_oper;
@@ -86,6 +87,7 @@ string calculator(vector<string> str){
 	
 	for(int i=size-1; i>=0; i--){
         if(str[i]=="+"||str[i]=="-"||str[i]=="*"||str[i]=="/"){
+            counter_opers++;
             if (!mysk_num.empty()){
                 num1 = mysk_num.top();
 			    mysk_num.pop();
@@ -110,8 +112,12 @@ string calculator(vector<string> str){
         }
 		else{
             mysk_num.push(stoi(str[i]));
+            counter_nums++;
         }
 	}
+    if (counter_nums != counter_opers+1){
+        return "Error";
+    }
     std::cout<<SwitchToMid(str)<<" = ";
     result = to_string(mysk_num.top());
     return result;
